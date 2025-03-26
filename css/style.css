@@ -96,19 +96,15 @@ a {
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .hero-text {
-  flex: 1 1 500px;
 }
 
 .hero-text h1 {
-  font-size: 5em;
+  font-size: 80px;
 	font-weight: 700;
 }
 
@@ -126,18 +122,13 @@ a {
   gap: 20px;
 }
 
-.hero-image {
-  flex: 1 1 600px;
-}
-
-.hero-image img {
-  width: 100%;
-	max-width: 760px;
-  height: auto;
+.hero-image img{
+	width: 100%;
 }
 
 /* Brands */
 .brands {
+	margin-top: 50px;
   padding: 50px 0;
   text-align: center;
 }
@@ -152,7 +143,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .brands-logos img {
@@ -161,55 +152,59 @@ a {
 
 /* Portfolio */
 .portfolio {
-  padding: 80px 0;
 }
 
 .portfolio-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
+	margin-top: 200px;
+  display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .portfolio-item.reverse {
-  flex-direction: row-reverse;
+  
 }
 
 .portfolio-text {
-  flex: 1 1 500px;
+  font-size: 18px;
 }
 
 .portfolio-text h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 64px;
+	font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .portfolio-text p {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .portfolio-links {
-  display: flex;
-  gap: 20px;
+	display: flex;
 }
 
 .portfolio-links a {
-  color: #8776e9;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border 0.3s;
+	margin-right: 40px;
+	border-bottom: 1px solid #8776e9;
+}
+
+.portfolio-links img {
+	max-width: 24px;
+	height: 24px;
+	margin-right: 6px;
 }
 
 .portfolio-links a:hover {
-  border-color: #8776e9;
+	border-bottom: 2px solid #8776e9;
+	text-shadow: 1px 1px 1px #8776e9;
+	transition: linear 0.2s;
 }
 
 .portfolio-item img {
-  flex: 1 1 400px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+}
+
+.section-label {
+	color: #fa6dcb;
 }
 
 /* Services */
