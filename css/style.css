@@ -101,9 +101,11 @@ a {
 }
 
 .hero-text {
+  color: #3f3d56;
 }
 
 .hero-text h1 {
+  color: #8776e9;
   font-size: 80px;
 	font-weight: 700;
 }
@@ -158,6 +160,7 @@ a {
 
 /* Portfolio */
 .portfolio {
+  
 }
 
 .portfolio-item {
@@ -203,6 +206,10 @@ a {
 	color: #fa6dcb;
 }
 
+.section-title + p {
+  color: #3f3d56;
+}
+
 /* Services */
 .services {
   padding: 200px 0;
@@ -228,7 +235,7 @@ a {
 	justify-content: space-between;
 	width: 350px;
 	height: 560px;
-  background: #e5e5fa;
+  background: #f3f3fe;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -362,51 +369,104 @@ a {
 /* Footer */
 .footer {
   background-color: #f3f3fe;
-  padding: 60px 20px 30px;
+  padding: 120px 20px 30px;
+  color: #3f3d56;
+  font-size: 18px;
+}
+
+.footer .arrow {
+  width: 25px;
+  height: 25px;
 }
 
 .footer-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
+  gap: 4%;
+}
+
+.footer-brand {
+  width: 30%;
 }
 
 .footer-brand .logo {
   font-size: 20px;
   color: #8776e9;
   font-weight: bold;
+  margin-left: -10px;
 }
 
-.footer-brand p {
-  margin: 10px 0;
+.footer p {
+  margin: 0px 0 10px;
 }
 
-.footer-links ul,
-.footer-location,
-.footer-contact {
-  font-size: 14px;
+.footer-links {
+  width: 12%;
 }
 
 .footer-links ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul li:hover {
+  color: #8776e9;
+}
+
+.footer-location {
+  width: 26%;
+}
+
+.footer-location p {
+  margin: 0;
+}
+
+.footer-location-grid {
+  display: grid;
+  grid-template-columns: 30px auto;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.footer-contact {
+  width: 20%;
 }
 
 .footer-links h4,
 .footer-location h4,
 .footer-contact h4 {
   margin-bottom: 10px;
-  color: #3f3d56;
+  color: #8776e9;
+  font-weight: 700;
 }
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social a {
+  width: 35px;
+  height: 35px;
+  align-content: center;
+  text-align: center;
+  background-color: #e5e5fa;
+  border-radius: 50%;
+}
+
 
 .social a img {
   width: 20px;
-  margin-right: 10px;
+  height: 20px;
+}
+
+.social a:hover {
+  border: 1px solid #8776e9;
+  transition: linear 0.5s;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
   font-size: 13px;
   color: #999;
 }
